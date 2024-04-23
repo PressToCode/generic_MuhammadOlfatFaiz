@@ -1,14 +1,13 @@
-public class GenericClassMultiple {
-    public class GenericClass<T,U> {
+public class GenericClassMultiple <T,U> {
         private T dataPertama;
         private U dataKedua;
         
         // Constructor
-        public GenericClass(T dataPertama) {
+        public GenericClassMultiple(T dataPertama) {
             this.dataPertama = dataPertama;
         }
         
-        public GenericClass(T dataFirst, U dataSecond) {
+        public GenericClassMultiple(T dataFirst, U dataSecond) {
             this.dataPertama = dataFirst;
             this.dataKedua = dataSecond;
         }
@@ -28,5 +27,4 @@ public class GenericClassMultiple {
         public void setDataKedua(U dataSecond) {
             this.dataKedua = dataSecond;
         }
-    }
 }
