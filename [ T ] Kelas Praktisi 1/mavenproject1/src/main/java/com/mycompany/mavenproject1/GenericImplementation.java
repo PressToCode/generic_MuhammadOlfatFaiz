@@ -10,12 +10,12 @@ package com.mycompany.mavenproject1;
  */
 public class GenericImplementation {
     
-    public static void main() {
-    GenericClass<String, boolean> generic = new GenericClass<>("Wow");
-    GenericClass<String, boolean> generic2 = new GenericClass<>("Hello World", True);
+    public static void main(String[] args) {
+    GenericClass<String> generic = new GenericClass<>("Hello World");
     
-    System.out.println(generic.getDataFirst());
-    System.out.println(generic2.getDataFirst());
-    System.out.println(generic2.getDataSecond());
+    System.out.println(generic.getDataPertama());
+    
+    generic.setDataPertama("Hello semua!");
+    System.out.println(generic.getDataPertama());
     }
 }
