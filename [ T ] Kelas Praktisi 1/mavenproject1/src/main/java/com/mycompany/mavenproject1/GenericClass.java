@@ -9,5 +9,17 @@ package com.mycompany.mavenproject1;
  * @author PREDATOR
  */
 public class GenericClass {
+    private T dataPertama;
     
+    public GenericClass(T dataPertama) {
+        this.dataPertama = dataPertama;
+    }
+    
+    public T getDataPertama() {
+        return this.dataPertama;
+    }
+    
+    public void setDataPertama(T dataPertama) {
+        this.dataPertama = dataPertama;
+    }
 }
